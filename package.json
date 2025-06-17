@@ -1,0 +1,17 @@
+{
+  "name": "karton-card-app",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "publish": "git add . --all && git commit -m 'new' || true && surge ./dist/ && npm publish"
+  },
+  "dependencies": {
+    "kartonjs": "^1.0.3"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  }
+}
