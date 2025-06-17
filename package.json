@@ -1,12 +1,13 @@
 {
   "name": "kartonjs-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
+  "main": "src/index.js",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "publish": "git add . --all && git commit -m 'new' || true && git push && surge ./dist/ https://kartonjs-card.surge.sh && npm publish"
+    "deploy": "git add . --all && git commit -m 'new' || true && git push && npm run build && surge ./dist/ https://kartonjs-card.surge.sh && npm publish"
   },
   "dependencies": {
     "kartonjs": "^1.0.3"
