@@ -6,7 +6,7 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "publish": "git add . --all && git commit -m 'new' || true && surge ./dist/ https://kartonjs-card.surge.sh && npm publish"
+    "publish": "git add . --all && git commit -m 'new' || true && git push && surge ./dist/ https://kartonjs-card.surge.sh && npm publish"
   },
   "dependencies": {
     "kartonjs": "^1.0.3"
